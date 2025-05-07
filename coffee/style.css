@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset and Global Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Root Variables */
+:root {
+    --white: #fff;
+    --dark-color: #8c5b5b;
+    --primary-color: #4a1212;
+    --secondary-color: #edfe52;
+    --light-pink-color: #faf4f5;
+    --medium-gray-color: #ccc;
+
+    /* Font Sizes */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-1: 1.5rem;
+    --font-size-x1: 2rem;
+    --font-size-xx1: 2.3rem;
+
+    /* Font Weights */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Border Radius */
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+}
+
+/* Basic Elements */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* Header Styles */
+header {
+    background: var(--primary-color);
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    height: 70px;
+}
+
+/* Logo Text */
+.navbar .nav-logo .logo-text {
+    color: var(--white);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-x1);
+}
+
+/* Nav Menu */
+.navbar .nav-menu {
+    display: flex;
+    gap: 40px;
+}
+
+/* Navigation Links (Corrected + Modified) */
+.navbar .nav-menu .nav-link {
+    padding: 10px 25px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-semibold);
+    border-radius: 9999px; /* Perfect full cylinder */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border: 2px solid transparent;
+}
+
+/* Hover Effects */
+.navbar .nav-menu .nav-link:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    transform: scale(1.08);
+    box-shadow: 0 6px
+}
